@@ -4,7 +4,7 @@ One page do time de UX da 3ADS: portfólio de landing pages, sites, protótipos 
 
 **No ar:** https://atende3ads-ux.github.io/3ads-ux/
 
-Segue o design system da página da [3ADS EDU](https://atende3ads-ux.github.io/3ads-edu/) (repo `atende3ads-ux/3ads-edu`): Geist, papel `#fafbf9`, azul `#a8dded`, verde-petróleo `#182323`, botões divididos e as mesmas seções (topo com vídeo, clientes, projetos, formatos, método, perguntas e contato).
+Segue o design system da página da [3ADS EDU](https://atende3ads-ux.github.io/3ads-edu/) (repo `atende3ads-ux/3ads-edu`) em **modo escuro**: Geist, fundo `#0b1112`, azul `#a8dded`, verde-petróleo `#182323`, botões divididos e as mesmas seções (topo com vídeo, clientes, projetos, formatos, método, perguntas e contato).
 
 ## Estrutura
 

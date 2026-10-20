@@ -15,6 +15,8 @@
   const contato = (msg) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
   const MSG_PADRAO = 'Olá! Quero conversar com o time de UX da 3ADS sobre uma página para o meu negócio.';
 
+  // Logos que já vêm dentro de uma caixa: no escuro não são invertidos (a caixa ficaria clara).
+  const LOGO_EM_CAIXA = ['Unimed Cerrado'];
   const CLIENTES = ['Unimed Cerrado', 'Alata', 'IPOG Vitória', 'Grupo Saga', 'CBCO Hospital de Olhos', 'Terral', 'Alexfarma', 'MyBroker'];
 
   const PROJETOS = {
@@ -123,7 +125,7 @@
 
   // ---------- clientes ----------
   const grupo = (oculto) => `<ul class="clients-marquee-group"${oculto ? ' aria-hidden="true"' : ' aria-label="Marcas da trajetória da 3ADS"'}>` +
-    CLIENTES.map((n, i) => `<li><img src="images/clientes/client-${i + 1}.png" alt="${oculto ? '' : esc(n)}" width="140" height="62" loading="lazy" decoding="async"></li>`).join('') +
+    CLIENTES.map((n, i) => `<li><img src="images/clientes/client-${i + 1}.png" alt="${oculto ? '' : esc(n)}"${LOGO_EM_CAIXA.includes(n) ? ' data-caixa' : ''} width="140" height="62" loading="lazy" decoding="async"></li>`).join('') +
     '</ul>';
   $('#clientes').innerHTML = grupo(false) + grupo(true);
 
