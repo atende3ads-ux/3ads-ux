@@ -17,7 +17,14 @@ media/              vídeo do topo (1080p no desktop, 720p no celular) e capa
 images/projetos/    capturas dos projetos (capa, página inteira e celular)
 images/clientes/    logos de clientes da 3ADS
 scripts/servir.mjs  servidor local: node scripts/servir.mjs → http://localhost:4175/
+saude/index.html    landing page da oferta de sites para médicos e clínicas
+assets/saude.css    blocos só da página de saúde (pacotes, garantias, etapas)
+assets/saude.js     WhatsApp por pacote, menu e perguntas da página de saúde
 ```
+
+## Página de saúde (`/saude/`)
+
+Oferta nichada para médicos e clínicas, saída do planejamento estratégico de 20/10/2026: Página de Procedimento (R$ 1.497), Site Consultório (R$ 3.497), Site Clínica (a partir de R$ 6.997) e Cuidado Contínuo (R$ 297/mês). Preços e garantias ficam no HTML; as mensagens de WhatsApp de cada pacote e as perguntas ficam em `assets/saude.js`. Os cliques nos botões disparam `clique_whatsapp` (GA4) e `Contact` (pixel da Meta) se esses scripts forem adicionados à página.
 
 HTML, CSS e JS puros, sem build. Push na `main` publica no GitHub Pages.
 
